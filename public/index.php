@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+$path = $_SERVER["REQUEST_URI"];
+require '../config/db.php';
+require '../routes/web.php';
 
-<body>
-    Hello
-</body>
+// require_once('../routes/web.php');
+// $route = new web($path);
 
-</html>
+echo $data;
